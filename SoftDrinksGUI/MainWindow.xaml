@@ -1,0 +1,33 @@
+﻿<Window x:Class="SoftDrinksGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoftDrinksGUI"
+        mc:Ignorable="d"
+        Title="Soft drinks" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="maiAjanlat" Content="Ajánlatunk: " HorizontalAlignment="Left" Margin="19,63,0,0" VerticalAlignment="Top" Height="31" Width="84" FontSize="14"/>
+        <Label Content="Legolcsóbb - nem gyümölcsös üdítőnk:" HorizontalAlignment="Left" Margin="19,105,0,0" VerticalAlignment="Top" Height="40" Width="264" FontSize="14"/>
+        <Label x:Name="legolcsobb" Content="" HorizontalAlignment="Left" Margin="29,151,0,0" VerticalAlignment="Top" Width="254" Height="40" FontSize="14"/>
+        <Label Content="Gyártó:" HorizontalAlignment="Left" Margin="19,252,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="gyartoKereses" HorizontalAlignment="Left" Margin="86,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="arajanlatBtn" Content="Árajánlat készítés" HorizontalAlignment="Left" Margin="29,305,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Édesítés:" HorizontalAlignment="Left" Margin="461,138,0,0" VerticalAlignment="Top"/>
+        <Label Content="Név:" HorizontalAlignment="Left" Margin="461,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ár:" HorizontalAlignment="Left" Margin="464,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,0.018"/>
+        <TextBox x:Name="nevUj" HorizontalAlignment="Left" Margin="578,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="edesitesUj" HorizontalAlignment="Left" Margin="578,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="ar" HorizontalAlignment="Left" Margin="578,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="ujUdito" Content="Új üdítő felvétele" HorizontalAlignment="Left" Margin="516,331,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Üdítőitalok" HorizontalAlignment="Center" Margin="0,2,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="hanyGyarto" Content="" HorizontalAlignment="Left" Margin="29,211,0,0" VerticalAlignment="Top" Width="284" Height="36"/>
+        <Label Content="Csomagolás:" HorizontalAlignment="Left" Margin="461,217,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="csomagolasUj" HorizontalAlignment="Left" Margin="578,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Gyümölcstartalom:" HorizontalAlignment="Left" Margin="461,256,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="gyumolcsTartalomUj" HorizontalAlignment="Left" Margin="578,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="243" Margin="438,83,0,0" VerticalAlignment="Top" Width="332"/>
+        <Label Content="Új termék felvétele" HorizontalAlignment="Left" Margin="445,68,0,0" VerticalAlignment="Top" Background="White"/>
+
+    </Grid>
+</Window>
