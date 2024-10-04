@@ -12,7 +12,7 @@
         <Label x:Name="legolcsobb" Content="" HorizontalAlignment="Left" Margin="29,151,0,0" VerticalAlignment="Top" Width="254" Height="40" FontSize="14"/>
         <Label Content="Gyártó:" HorizontalAlignment="Left" Margin="19,252,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="gyartoKereses" HorizontalAlignment="Left" Margin="86,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
-        <Button x:Name="arajanlatBtn" Content="Árajánlat készítés" HorizontalAlignment="Left" Margin="29,305,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="arajanlatBtn" Content="Árajánlat készítés" HorizontalAlignment="Left" Margin="29,305,0,0" VerticalAlignment="Top" Width="176" Click="arajanlatBtn_Click"/>
         <Label Content="Édesítés:" HorizontalAlignment="Left" Margin="461,138,0,0" VerticalAlignment="Top"/>
         <Label Content="Név:" HorizontalAlignment="Left" Margin="461,99,0,0" VerticalAlignment="Top"/>
         <Label Content="Ár:" HorizontalAlignment="Left" Margin="464,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,0.018"/>

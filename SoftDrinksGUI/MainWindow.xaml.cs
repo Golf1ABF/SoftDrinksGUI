@@ -55,8 +55,26 @@ namespace SoftDrinksGUI
             }
             sw.Close();
 
-            sw = new StreamWriter("../../../source/offer.txt", false);
-            var felhasznaloAltalValasztott = lista.Where(x => x.Nev == gyartoKereses.Text);
+            
+        }
+
+        private void arajanlatBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var sw = new StreamWriter("../../../source/offer.txt", false);
+            var felhasznaloAltalValasztott = lista.Where(x => x.Nev.Split(" ")[0] == gyartoKereses.Text);
+            foreach (var item in felhasznaloAltalValasztott)
+            {
+                sw.WriteLine(item.Nev);
+            }
+            sw.Close();
+
+            if (felhasznaloAltalValasztott != null)
+            {
+                MessageBox.Show($"{felhasznaloAltalValasztott.Count()} db üdítő van ettől a gyártótól, átlagáruk: {felhasznaloAltalValasztott.Average(x => x.Ar)}");
+            } else 
+            {
+                MessageBox.Show("Nincs ilyen üdítőnk. Kérjük válasszon mást!");
+            }
         }
     }
 }
